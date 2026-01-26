@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Piyush Gupta | Game Developer Portfolio</title>
+
+  <!-- CSS File -->
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Fonts (optional, will style in CSS) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+</head>
+
+<body>
+
+  <!-- Background FX Layers -->
+  <div class="bg-stars"></div>
+  <div class="bg-glow"></div>
+  <div class="scanlines"></div>
+
+  <!-- Floating HUD UI -->
+  <header class="nav">
+    <div class="logo">
+      <span class="logo-dot"></span>
+      <span class="logo-text">TECH HAVEN</span>
+      <span class="logo-sub">GAME SHOWCASE</span>
+    </div>
+
+    <nav class="nav-links">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#featured">Featured</a>
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <button class="nav-btn" id="openMenu">MENU</button>
+  </header>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobileMenu">
+    <div class="mobile-top">
+      <h3>Navigation</h3>
+      <button class="close-btn" id="closeMenu">✕</button>
+    </div>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#featured">Featured</a>
+    <a href="#projects">Projects</a>
+    <a href="#skills">Skills</a>
+    <a href="#contact">Contact</a>
+  </div>
+
+  <!-- HERO SECTION -->
+  <section class="hero" id="home">
+    <div class="hero-left">
+      <div class="status-pill">
+        <span class="status-dot"></span>
+        <span>AVAILABLE FOR GAME PROJECTS</span>
+      </div>
+
+      <h1 class="hero-title">
+        HI, I’M <span class="neon">PIYUSH GUPTA</span><br />
+        <span class="muted">GAME DEVELOPER</span> & <span class="muted">CREATOR</span>
+      </h1>
+
+      <p class="hero-desc">
+        I build <span class="neon-soft">AAA-style</span> game experiences with modern UI,
+        smooth animations, cinematic visuals and clean professional workflow.
+      </p>
+
+      <div class="hero-btns">
+        <a class="btn primary" href="#projects">View My Games</a>
+        <a class="btn ghost" href="#contact">Hire Me</a>
+      </div>
+
+      <div class="hero-stats">
+        <div class="stat">
+          <h3>10+</h3>
+          <p>Game Projects</p>
+        </div>
+        <div class="stat">
+          <h3>UI/UX</h3>
+          <p>Sci-Fi Design</p>
+        </div>
+        <div class="stat">
+          <h3>Unity</h3>
+          <p>Game Development</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-right">
+      <div class="profile-card">
+        <div class="card-top">
+          <p class="chip">PLAYER ID</p>
+          <p class="code">#HAVEN-3164</p>
+        </div>
+
+        <div class="avatar-area">
+          <div class="avatar-glow"></div>
+          <div class="avatar">
+            <span>PG</span>
+          </div>
+        </div>
+
+        <div class="card-info">
+          <h2>Piyush Gupta</h2>
+          <p class="sub">Game Developer • Sci-Fi UI Designer</p>
+
+          <div class="card-lines">
+            <div class="line"></div>
+            <div class="line"></div>
+          </div>
+
+          <div class="quick-tags">
+            <span>Unity</span>
+            <span>Level Design</span>
+            <span>3D/2D</span>
+            <span>UI/UX</span>
+          </div>
+        </div>
+
+        <div class="card-bottom">
+          <p class="hint">Scroll to explore</p>
+          <div class="pulse"></div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- ABOUT SECTION -->
+  <section class="section" id="about">
+    <div class="section-head">
+      <h2 class="section-title">About Me</h2>
+      <p class="section-sub">
+        A sci-fi themed personal brand — professional and game-industry ready.
+      </p>
+    </div>
+
+    <div class="about-grid">
+      <div class="about-card">
+        <h3>My Mission</h3>
+        <p>
+          I create immersive game experiences with cinematic feel,
+          smooth gameplay, and clean polished visuals.
+        </p>
+      </div>
+
+      <div class="about-card">
+        <h3>What I Do</h3>
+        <p>
+          Game development, UI/UX, level creation, animations, and game
+          showcase websites for professional presentation.
+        </p>
+      </div>
+
+      <div class="about-card">
+        <h3>Game Industry Standard</h3>
+        <p>
+          My portfolio is designed like a AAA game landing page —
+          futuristic, clean, and premium.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURED GAME SECTION -->
+  <section class="section featured" id="featured">
+    <div class="section-head">
+      <h2 class="section-title">Featured Game</h2>
+      <p class="section-sub">Your best game highlight like a premium trailer page.</p>
+    </div>
+
+    <div class="featured-box">
+      <div class="featured-left">
+        <p class="chip big">NOW PLAYING</p>
+        <h3 class="featured-title">Project: Neon Warzone</h3>
+        <p class="featured-desc">
+          A sci-fi combat game experience with futuristic environment,
+          high-energy visuals and modern HUD style UI.
+        </p>
+
+        <div class="featured-actions">
+          <button class="btn primary" id="playTrailerBtn">Play Trailer</button>
+          <button class="btn ghost">Download Build</button>
+        </div>
+
+        <div class="specs">
+          <div class="spec">
+            <span class="spec-title">Genre</span>
+            <span class="spec-val">Sci-Fi Action</span>
+          </div>
+          <div class="spec">
+            <span class="spec-title">Engine</span>
+            <span class="spec-val">Unity</span>
+          </div>
+          <div class="spec">
+            <span class="spec-title">Platform</span>
+            <span class="spec-val">PC / Mobile</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="featured-right">
+        <div class="game-preview">
+          <div class="preview-grid"></div>
+          <div class="preview-screen">
+            <p class="preview-text">GAME PREVIEW AREA</p>
+            <p class="preview-small">Replace this with gameplay image/video later</p>
+          </div>
+          <div class="hud-corners">
+            <span></span><span></span><span></span><span></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS SECTION -->
+  <section class="section" id="projects">
+    <div class="section-head">
+      <h2 class="section-title">Game Projects</h2>
+      <p class="section-sub">Show your games like a studio showcase.</p>
+    </div>
+
+    <div class="project-grid">
+
+      <div class="project-card">
+        <div class="project-top">
+          <p class="chip">GAME #01</p>
+          <h3>Cyber Runner</h3>
+        </div>
+        <p class="project-desc">
+          Fast paced runner with sci-fi neon world and smooth movement system.
+        </p>
+        <div class="project-tags">
+          <span>Unity</span><span>Runner</span><span>VFX</span>
+        </div>
+        <div class="project-actions">
+          <button class="mini-btn">View</button>
+          <button class="mini-btn ghost-mini">Trailer</button>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-top">
+          <p class="chip">GAME #02</p>
+          <h3>Space Survival</h3>
+        </div>
+        <p class="project-desc">
+          Survival game in deep space with resource system and hazards.
+        </p>
+        <div class="project-tags">
+          <span>3D</span><span>Survival</span><span>UI</span>
+        </div>
+        <div class="project-actions">
+          <button class="mini-btn">View</button>
+          <button class="mini-btn ghost-mini">Trailer</button>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-top">
+          <p class="chip">GAME #03</p>
+          <h3>Alien Arena</h3>
+        </div>
+        <p class="project-desc">
+          Arena-based combat with futuristic characters & effects.
+        </p>
+        <div class="project-tags">
+          <span>Action</span><span>Combat</span><span>VFX</span>
+        </div>
+        <div class="project-actions">
+          <button class="mini-btn">View</button>
+          <button class="mini-btn ghost-mini">Trailer</button>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- SKILLS SECTION -->
+  <section class="section" id="skills">
+    <div class="section-head">
+      <h2 class="section-title">Skills</h2>
+      <p class="section-sub">Your game dev + UI power shown in clean style.</p>
+    </div>
+
+    <div class="skills-grid">
+      <div class="skill-card">
+        <h3>Game Development</h3>
+        <ul>
+          <li>Unity Engine</li>
+          <li>Gameplay Mechanics</li>
+          <li>Physics + Collisions</li>
+          <li>Level Design</li>
+        </ul>
+      </div>
+
+      <div class="skill-card">
+        <h3>UI/UX (Sci-Fi)</h3>
+        <ul>
+          <li>AAA HUD UI</li>
+          <li>Modern Web UI</li>
+          <li>Animations + Micro Effects</li>
+          <li>UX Flow Design</li>
+        </ul>
+      </div>
+
+      <div class="skill-card">
+        <h3>Tools</h3>
+        <ul>
+          <li>Photoshop / Canva</li>
+          <li>Blender (Basic)</li>
+          <li>Git / Project Handling</li>
+          <li>Build & Publish</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT SECTION -->
+  <section class="section contact" id="contact">
+    <div class="section-head">
+      <h2 class="section-title">Contact</h2>
+      <p class="section-sub">Let’s build something that looks like a AAA title.</p>
+    </div>
+
+    <div class="contact-grid">
+      <div class="contact-card">
+        <h3>Direct Contact</h3>
+        <p>📧 Email: <span class="neon-soft">Piyushgupta3164@gmail.com</span></p>
+        <p>📞 Phone: <span class="neon-soft">8879021239</span></p>
+
+        <div class="social-links">
+          <a href="#" class="social">LinkedIn</a>
+          <a href="#" class="social">GitHub</a>
+          <a href="#" class="social">YouTube</a>
+        </div>
+      </div>
+
+      <form class="contact-form">
+        <h3>Send Message</h3>
+        <input type="text" placeholder="Your Name" required />
+        <input type="email" placeholder="Your Email" required />
+        <textarea rows="5" placeholder="Your Message..." required></textarea>
+        <button type="submit" class="btn primary">Send</button>
+        <p class="form-note">This form UI is ready. JS will handle actions later.</p>
+      </form>
+    </div>
+  </section>
+
+  <!-- Trailer Modal -->
+  <div class="modal" id="trailerModal">
+    <div class="modal-box">
+      <div class="modal-top">
+        <h3>Trailer Player</h3>
+        <button class="close-btn" id="closeTrailer">✕</button>
+      </div>
+      <div class="modal-content">
+        <div class="fake-video">
+          <p>🎬 Trailer Area</p>
+          <p class="small">Replace this with YouTube embed / video later</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <p>© <span id="year"></span> Piyush Gupta | Tech Haven • Game Developer Showcase</p>
+  </footer>
+
+  <!-- JS File -->
+  <script src="script.js"></script>
+</body>
+</html>
