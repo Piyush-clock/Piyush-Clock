@@ -1,6 +1,5 @@
 /* ==============================
    TECH HAVEN - AAA SCIFI JS
-   FULL SAFE VERSION
    ============================== */
 
 // Elements
@@ -36,7 +35,7 @@ if (closeMenuBtn && mobileMenu) {
   });
 }
 
-// Close mobile menu when link clicked
+// Close mobile menu when any link is clicked
 if (mobileMenu) {
   const mobileLinks = mobileMenu.querySelectorAll("a");
   mobileLinks.forEach((link) => {
@@ -61,7 +60,7 @@ if (closeTrailerBtn && trailerModal) {
   });
 }
 
-// Close modal on outside click
+// Close modal when clicking outside the modal box
 if (trailerModal) {
   trailerModal.addEventListener("click", (e) => {
     if (e.target === trailerModal) {
@@ -71,7 +70,7 @@ if (trailerModal) {
 }
 
 /* ==============================
-   Escape Key Close
+   Escape Key Close (Menu + Modal)
    ============================== */
 document.addEventListener("keydown", (e) => {
   if (e.key === "Escape") {
@@ -81,16 +80,11 @@ document.addEventListener("keydown", (e) => {
 });
 
 /* ==============================
-   SAFE Smooth Scroll
-   Only affects # internal links
+   Smooth Scroll for Navbar Links
    ============================== */
 document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
   anchor.addEventListener("click", function (e) {
     const targetId = this.getAttribute("href");
-
-    // Ignore empty or dummy anchors
-    if (!targetId || targetId === "#") return;
-
     const targetEl = document.querySelector(targetId);
 
     if (targetEl) {
@@ -104,16 +98,13 @@ document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
 });
 
 /* ==============================
-   Button Click FX
+   Button Click FX (Mini Sci-Fi)
    ============================== */
-const allButtons = document.querySelectorAll(
-  "button, .btn, .mini-btn, .social"
-);
+const allButtons = document.querySelectorAll("button, .btn, .mini-btn, .social");
 
 allButtons.forEach((btn) => {
   btn.addEventListener("click", () => {
     btn.classList.add("clicked");
-
     setTimeout(() => {
       btn.classList.remove("clicked");
     }, 180);
@@ -121,6 +112,18 @@ allButtons.forEach((btn) => {
 });
 
 /* ==============================
-   Console Ready Message
+   Optional: Small Hover Sound (OFF)
+   (Future upgrade if you want)
    ============================== */
-console.log("🚀 Tech Haven Portfolio Loaded Successfully!");
+// const hoverSound = new Audio("hover.mp3");
+// document.querySelectorAll("a, button").forEach(el => {
+//   el.addEventListener("mouseenter", () => {
+//     hoverSound.currentTime = 0;
+//     hoverSound.play();
+//   });
+// });
+
+/* ==============================
+   Done ✅
+   ============================== */
+console.log("🚀 Tech Haven Sci-Fi Portfolio Loaded Successfully!");
